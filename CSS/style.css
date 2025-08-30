@@ -91,7 +91,7 @@ body {
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    gap; 20px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 /* Contact */
-.comtact {
+.contact {
     padding: 80px 40px;
     background: #f9f9f9;
     text-align: center;

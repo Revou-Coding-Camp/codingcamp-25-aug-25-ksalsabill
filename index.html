@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kamalia Salsabila | Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-    
+    <!-- Navbar -->
+     <header>
+        <nav class="navbar">
+            <h1 class="logo">Kamalia</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Message Me</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- Home -->
+      <section id="home" class="banner">
+        <div class="banner-text">
+            <h2>Welcome to My Portfolio</h2>
+            <p id="welcomeMsg">Hi Guest 👋</p>
+            <input type="text" id="nameInput" palceholder="Enter your name">
+            <button onclick="setWelcome()">Say Hi</button>
+        </div>
+      </section>
+
+      <!-- About -->
+       <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="Pictures/foto formal.jpg" alt="Profile Photo"
+            <div class="about-text">
+                <p>
+                    Hi! I'm <strong>Kamalia Salsabila</strong>, an International Relations student passionate about 
+                    <span class="highlight">technology</span>, <span class="highlight">research</span>, and <span class="highlight">digital communication</span>.
+                </p>
+                <p><strong>Vision:</strong> To empower global collaboration through creativity & innovation.</p>
+                <p><strong>Mission:</strong> Keep learning, sharing, and creating meaningful impact.</p>
+            </div>
+        </div>
+       </section>
+
+       <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <h2>My Works</h2>
+            <div class="portfolio grid">
+                <div class="card">
+                    <h3>Organization</h3>
+                    <p>Active in several organizations, building leadership & teamwork</p>
+                </div>
+                <div class="card">
+                    <h3>Media Staff</h3>
+                    <p>Worked in Kafe Prancis media team, handling social media & branding content.</p>
+                </div>
+                <div class="card">
+                    <h3>Publication</h3>
+                    <p>Contributes in some article papers and books</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+         <section id="contact" class="contact">
+            <h2>Message Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" palceholder="Write your message..." rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="formResult"></div>
+         </section>
+
+         <!-- Footer -->
+          <footer>
+            <p>© 2025 Kamalia Salsabila. Built with ❤️</p>
+          </footer>
+
+          <script src="js/script.js"></script>
 </body>
 </html>
